@@ -55,6 +55,38 @@ img {
   background-color: var(--basic-light-grey);
 }
 
+.main-header {
+
+}
+
+
+
+/* Main logo */
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+}
+
+
+/* Container */
+
+.container {
+  display: flex;
+  width: 1160px;
+  min-height: 65px;
+  margin: auto;
+
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+
 
 
 /* Main navigation */
@@ -64,6 +96,9 @@ img {
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
   font-size: 16px;
   font-weight: 500;
   line-height: 30px;
@@ -73,6 +108,9 @@ img {
 
 .site-navigation {
   list-style: none;
+  width: 620px;
+  margin: 0;
+  padding: 0;
 }
 
 .main-navigation h1 {
@@ -83,27 +121,35 @@ img {
 }
 
 
-
 /* User navigation */
 
+
+
+
+.basket-link {
+  text-decoration: none;
+  max-width: 140px;
+  padding-left: 50px;
+}
+
 .site-navigation a,
-.user-navigation a {
+.basket-link {
   color: var(--basic-black);
 }
 
 .site-navigation a:hover,
-.user-navigation a:hover {
+.basket-link:hover {
   color: var(--basic-rose);
 }
 
 .site-navigation a:focus,
-.user-navigation a:focus {
+.basket-link:focus {
   color: var(--basic-black);
   opacity: 0.3;
 }
 
 .site-navigation a:active,
-.user-navigation a:active {
+.basket-link:active {
   color: var(--basic-black);
 }
 
@@ -116,6 +162,13 @@ img {
 }
 
 /* Slider */
+
+.slider {
+  display: block;
+  position: relative;
+  background-color: var(--basic-light-grey);
+}
+
 
 .promo-slider-list {
   list-style: none;
@@ -138,6 +191,10 @@ img {
 
 .advertising-list {
   list-style: none;
+}
+
+.advertising-item {
+  
 }
 
 
@@ -331,11 +388,12 @@ img {
   list-style: none;
 }
 
-.catalog-head .catalog-head-item-title {
+.catalog-head h3 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
 .catalog-head a {
@@ -344,6 +402,7 @@ img {
   font-weight: 400;
   color: var(--basic-black);
   opacity: 0.3;
+  text-transform: uppercase;
 }
 
 .catalog-head a:hover {
@@ -456,7 +515,7 @@ img {
   color: var(--special-dark-grey);
 }
 
-.contacts-card p {
+.contacts-card .phone-link {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;

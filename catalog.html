@@ -25,11 +25,9 @@
             <li><a href="blank.html">Магазин</a></li>
             <li><a href="blank.html">Контакты</a></li>
           </ul>
-          <div class="user-navigation">
-            <a class="basket-link" href="#">Корзина</a>
-          </div>
-          <h1>Магазин готовых шаблонов</h1>
+          <a class="basket-link" href="#">Корзина</a>
         </div>
+        <h1>Магазин готовых шаблонов</h1>
       </div>
 
     </nav>
@@ -102,7 +100,7 @@
             <label for="filter-basket">Корзина</label>
           </li>
         </ul>
-        <button type="button">Показать</button>
+        <button type="submit">Показать</button>
       </fieldset>
 
       </form>
@@ -112,10 +110,10 @@
     <div class="page-main-column-right">
       <section class="catalog-head">
         <h2 class="visually-hidden">Наши работы</h2>
+        <h3 class="catalog-head-title">Сортировать:</h3>
         <ul class="catalog-head-list">
-          <li class="catalog-head-item-title">Сортировать:</li>
           <li class="catalog-head-item">
-            <a class="catalog-head-link-active" href="#">По цене</a>
+            <a class="catalog-head-link link-current" href="#">По цене</a>
           </li>
           <li class="catalog-head-item">
             <a class="catalog-head-link" href="#">По типу</a>
@@ -123,15 +121,18 @@
           <li class="catalog-head-item">
             <a class="catalog-head-link" href="#">По названию</a>
           </li>
-          <li class="catalog-head-item">
-            <a class="catalog-head-link-low" href="#"></a>
+        </ul>
+        <ul class="catalog-head-sort-list">
+          <li class="catalog-head-sort-item">
+            <a class="catalog-head-sort-link-low" href="#"></a>
           </li>
-          <li class="catalog-head-item">
-            <a class="catalog-head-link-high" href="#"></a>
+          <li class="catalog-head-sort-item">
+            <a class="catalog-head-sort-link-high" href="#"></a>
           </li>
         </ul>
+      </section>
     </div>
-    </section>
+
 
     <section class="catalog-moulds">
       <h2 class="visually-hidden">Каталог шаблонов</h2>
@@ -139,7 +140,7 @@
         <li class="catalog-catalog-moulds-item">
           <div class="catalog-catalog-moulds-info-price">
             <a class="item-link" href="#">Sedona</a>
-            <p>Информационный сайт<br> для туристов</p>
+            <p>Информационный сайт для туристов</p>
             <a class="button price-button" href="#">9 900 руб.</a>
           </div>
           <img src="img/img-sedona.jpg" width="359" height="578" alt="Шаблон «Sedona»">
@@ -147,7 +148,7 @@
         <li class="catalog-moulds-catalog-item">
           <div class="catalog-info-price">
             <a class="item-link" href="#">Pink</a>
-            <p>Продуктовый лендинг<br> приложения для iOS и<br> Android</p>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="button price-button" href="#">9 900 руб.</a>
           </div>
           <img src="img/img-pink.jpg" width="358" height="578" alt="Шаблон «Pink»">
@@ -155,7 +156,7 @@
         <li class="catalog-item">
           <div class="catalog-moulds-info-price">
             <a class="item-link" href="#">Barbershop «Borodinski»</a>
-            <p>Сайт салона красоты.<br> Для мужчин, да</p>
+            <p>Сайт салона красоты. Для мужчин, да</p>
             <a class="button price-button" href="#">9 900 руб.</a>
           </div>
           <img src="img/img-barbershop.jpg" width="358" height="578" alt="Шаблон Barbershop «Borodinski»">
@@ -163,7 +164,7 @@
         <li class="catalog-moulds-item">
           <div class="catalog-moulds-info-price">
             <a class="item-link" href="#">Mishka</a>
-            <p>Интернет-магазин вязаных<br> игрушек</p>
+            <p>Интернет-магазин вязаных игрушек</p>
             <a class="button price-button" href="#">9 900 руб.</a>
           </div>
           <img src="img/img-mishka.jpg" width="359" height="578" alt="Шаблон «Mishka»">
@@ -171,7 +172,7 @@
         <li class="catalog-moulds-item">
           <div class="catalog-moulds-info-price">
             <a class="item-link" href="#">A Plus</a>
-            <p>Лендинг курсов повышения<br> квалификации</p>
+            <p>Лендинг курсов повышения квалификации</p>
             <a class="button price-button" href="#">9 900 руб.</a>
           </div>
           <img src="img/img-aplus.jpg" width="359" height="578" alt="Шаблон «A Plus»">
@@ -179,7 +180,7 @@
         <li class="catalog-item">
           <div class="catalog-moulds-info-price">
             <a class="item-link" href="#">Kvast</a>
-            <p>Промо-сайт производителя<br> крафтового кваса</p>
+            <p>Промо-сайт производителя крафтового кваса</p>
             <a class="button price-button" href="#">9 900 руб.</a>
           </div>
           <img src="img/img-kvast.jpg" width="359" height="578" alt="Шаблон «Kvast»">
@@ -214,10 +215,10 @@
           <img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель адреса на карте">
           <div class="contacts-card">
-            <h3>NЁRDS DESIGN STUDIO</h3><br>
-            <address>191186, Санкт-Петербург,<br>
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <address>191186, Санкт-Петербург,
               ул. Б. Конюшенная, д. 19/8</address>
-            <p>тел. +7 (812) 275-75-75</p>
+            <a class="phone-link">тел. +7 (812) 275-75-75</a>
             <a class="button button-contacts" href="blank.html">Напишите нам</a>
             <!-- Здесь будет pop-up -->
           </div>
@@ -265,15 +266,15 @@
         <h2>Напишите нам</h2>
         <form class="popup-modal-info" action="https://echo.htmlacademy.ru/" method="POST">
           <p class="popup-modal-username">
-            <label for="username">Ваше имя:</label><br>
+            <label for="username">Ваше имя:</label>
             <input type="text" name="username" id="username" placeholder="Представьтесь пожалуйста">
           </p>
           <p class="popup-modal-email">
-            <label for="email">Ваш e-mail:</label><br>
+            <label for="email">Ваш e-mail:</label>
             <input type="email" name="email" id="email" placeholder="email@example.com">
           </p>
           <p class="popup-modal-text">
-            <label for="comment">Текст письма:</label><br>
+            <label for="comment">Текст письма:</label>
             <textarea name="comment" id="comment-field" cols="32" rows="5" placeholder="В свободной форме"></textarea>
           </p>
 
