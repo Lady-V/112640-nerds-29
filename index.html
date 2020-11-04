@@ -16,70 +16,74 @@
       <a class="main-header-logo" href="index.html">
         <img src="img/main-logo.png" width="160" height="65" alt="Логотип дизайн-студии «Нёрдс»">
       </a>
-      <div class="main-navigation-wrapper">
-        <div class="container">
-          <ul class="site-navigation">
-            <li><a href="blank.html">Студия</a></li>
-            <li><a href="blank.html">Клиенты</a></li>
-            <li><a href="blank.html">Магазин</a></li>
-            <li><a href="blank.html">Контакты</a></li>
-          </ul>
-        </div>
-        <a class="basket-link" href="#">Корзина</a>
-      </div>
+
+      <ul class="site-navigation">
+        <li><a href="blank.html">Студия</a></li>
+        <li><a href="blank.html">Клиенты</a></li>
+        <li><a href="blank.html">Магазин</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
+
+      <a class="basket-link" href="#">Корзина</a>
+
     </nav>
 
-    <div class="slider">
-      <h1>Дизайн-студия «Нёрдс»</h1>
-      <section class="promo-slider">
-        <h2>Слайдер</h2>
+    <section class="promo-slider">
+      <div class="slider">
+        <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
+        <h2 class="visually-hidden">Слайдер</h2>
         <ul class="promo-slider-list">
           <li class="promo-slider-item">
-            <h3 class="promo-slider-title">Долго, дорого, скрупулезно</h3>
-            <p class="promo-slider-description">Математически выверенный дизайн для вашего сайта или мобильного
-              приложения</p>
-            <a class="button button-slider" href="blank.html">Узнать больше</a>
+            <div style="padding-top: 79px;">
+              <h3 class="promo-slider-title">Долго, дорого, скрупулезно</h3>
+              <p class="promo-slider-description">Математически выверенный дизайн для вашего сайта или мобильного
+                приложения</p>
+              <a class="button button-slider" href="blank.html">Узнать больше</a>
+            </div>
             <img src="img/index-slide.svg" width="760" height="431" alt="Долго, дорого, скрупулезно">
           </li>
           <li></li>
           <li></li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
 
   </header>
 
   <main class="container">
-    <div class="advertaising-container">
-      <section class="advertising">
-        <h2>Реклама</h2>
+
+    <section class="advertising">
+      <div class="advertaising-container">
+        <h2 class="visually-hidden">Наши предложения</h2>
         <ul class="advertising-list">
           <li class="advertising-item">
             <img src="img/web-sites.svg" width="300" height="146" alt="Веб-сайты">
+            <h3 class="advertising-title">Веб-сайты</h3>
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="button button-web" href="blank.html">Заказать</a>
+            <a class="button-promo button-web" href="blank.html">Заказать</a>
           </li>
           <li class="advertising-item">
             <img src="img/apps.svg" width="300" height="146" alt="Приложения">
+            <h3 class="advertising-title">Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button button-apps" href="blank.html">Заказать</a>
+            <a class="button-promo button-apps" href="blank.html">Заказать</a>
           </li>
           <li class="advertising-item">
             <img src="img/presentations.svg" width="300" height="146" alt="Презентации">
+            <h3 class="advertising-title">Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button button-presentation" href="blank.html">Заказать</a>
+            <a class="button-promo button-presentation" href="blank.html">Заказать</a>
           </li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
 
-    <div class="description-column description-column-left">
-      <section class="facilities">
-        Возможности
-        <h2 class="facilities-title">Мы маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p class="facilities-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-          превыше креатива. Работаем не покладая
-          рук, как роботы.</p>
+
+    <div class="analytics">
+      <section class="description-column description-column-left">
+        <h3 class="visually-hidden">Возможности</h3>
+        <h2 class="facilities-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p class="facilities-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <h3>Выполняем заказы на разработку:</h3>
         <ul class="facilities-list">
           <li class="facilities-item">
@@ -93,11 +97,10 @@
           </li>
         </ul>
       </section>
-    </div>
 
-    <div class="description-column description-column-right">
-      <section class="features">
-        <h2>Преимущества</h2>
+
+      <section class="description-column description-column-right">
+        <h2 class="visually-hidden">Преимущества</h2>
         <img src="img/features.svg" width="360" height="208" alt="Преимущества">
         <h3 class="features-title">С 2004 года любим точность во всем:</h3>
         <ul class="features-list">
@@ -117,23 +120,35 @@
       </section>
     </div>
 
-    <div class="partners">
-      <section class="partners-logos">
-        <h2>Логотипы</h2>
-        <a class="partners-item" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/logo-html_academy.png" width="199" height="68" alt="Логотип «HTMLAcademy»">
-        </a>
-        <a class="partners-item" href="blank.html">
-          <img src="img/logo-barbershop_borodinsnski.png" width="209" height="90" alt="Логотип Barbershop «Borodinski»">
-        </a>
-        <a class="partners-item" href="blank.html">
-          <img src="img/logo-pink.png" width="185" height="52" alt="Логотип «Pink»">
-        </a>
-        <a class="partners-item" href="blank.html">
-          <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип «Mishka»">
-        </a>
-      </section>
-    </div>
+
+    <section class="partners">
+      <div class="partners-logos">
+        <h2 class="visually-hidden">Логотипы</h2>
+        <ul class="partners-logos-list">
+          <li class="partners-logos-item">
+            <a class="partners-logos-link" href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/logo-html_academy.png" width="199" height="68" alt="Логотип «HTMLAcademy»">
+            </a>
+          </li>
+          <li class="partners-logos-item">
+            <a class="partners-logos-link" href="blank.html">
+              <img src="img/logo-barbershop_borodinsnski.png" width="209" height="90"
+                alt="Логотип Barbershop «Borodinski»">
+            </a>
+          </li>
+          <li class="partners-logos-item">
+            <a class="partners-logos-link" href="blank.html">
+              <img src="img/logo-pink.png" width="185" height="52" alt="Логотип «Pink»">
+            </a>
+          </li>
+          <li class="partners-logos-item">
+            <a class="partners-logos-link" href="blank.html">
+              <img src="img/logo-mishka.png" width="173" height="84" alt="Логотип «Mishka»">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
 
   </main>
 
@@ -141,29 +156,28 @@
 
     <section class="footer-contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <ul class="footer-contacts-list">
-        <li class="footer-contacts-item">
-          <img src="img/map.jpg" width="1440" height="416" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-          <img class="map-marker" src="img/map-marker.png" width="231" height="190" alt="Указатель адреса на карте">
-
-          <div class="contacts-card">
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <address>191186, Санкт-Петербург,
-              ул. Б. Конюшенная, д. 19/8</address>
-            <a class="phone-link">тел. +7 (812) 275-75-75</a>
-            <a class="button button-contacts" href="blank.html">Напишите нам</a>
-            <!-- Здесь будет pop-up -->
-          </div>
-        </li>
-      </ul>
+      <img src="img/map-with-marker.jpg" width="1440" height="416"
+        alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" style="width: 100%; height: 416px;">
+      <div class="contacts-wrapper">
+        <div class="contacts-card">
+          <h3>NЁRDS DESIGN STUDIO</h3>
+          <address>191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8</address>
+          <a class="phone-link">тел. +7 (812) 275-75-75</a>
+          <a class="button button-contacts" href="blank.html">Напишите нам</a>
+          <!-- Здесь будет pop-up -->
+        </div>
+      </div>
     </section>
 
     <section class="footer-social">
-      <h2 class="footer-social-title">Давайте дружить, это выгодно!</h2>
-      <p class="footer-social-description">Скидка 10% для друзей из социальных сетей</p>
-      <ul>
-        <li>
-          <a class="social-button" href="#">
+      <div class="footer-social-text">
+        <h2 class="footer-social-title">Давайте дружить, это выгодно!</h2>
+        <p class="footer-social-description">Скидка 10% для друзей из социальных сетей</p>
+      </div>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="social-button social-button-vk" href="#">
             <span class="visually-hidden">Вконтакте</span>
             <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -172,16 +186,16 @@
             </svg>
           </a>
         </li>
-        <li>
-          <a class="social-button" href="#">
+        <li class="footer-social-item">
+          <a class="social-button social-button-fb" href="#">
             <span class="visually-hidden">Фейсбук</span>
             <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
             </svg>
           </a>
         </li>
-        <li>
-          <a class="social-button" href="#">
+        <li class="footer-social-item">
+          <a class="social-button social-button-ig" href="#">
             <span class="visually-hidden">Инстаграм</span>
             <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -195,8 +209,8 @@
 
   </footer>
 
-  <div class="popup">
-    <section class="popup-modal">
+  <section class="popup-modal popup-hide">
+    <div class="popup">
       <h2>Напишите нам</h2>
       <form class="popup-modal-info" action="https://echo.htmlacademy.ru/" method="POST">
         <p class="popup-modal-username">
@@ -218,8 +232,8 @@
 
       <button type="button">Закрыть</button>
 
-    </section>
-  </div>
+    </div>
+  </section>
 
 </body>
 
