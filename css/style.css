@@ -56,7 +56,19 @@ img {
 
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+
+width: 1px;
+height: 1px;
+margin: -1px;
+border: 0;
+padding: 0;
+
+white-space: nowrap;
+
+clip-path: inset(100%);
+clip: rect(0 0 0 0);
+overflow: hidden;
 }
 
 
@@ -88,13 +100,12 @@ img {
   display: block;
 }
 
-.main-header-logo
+
 /* Container */
 
 .container {
   width: 1160px;
-  min-height: 65px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .inner-page .secondary-logo {
@@ -223,8 +234,38 @@ img {
   display: flex;
 }
 
+.slide {
+  display: none;
+}
+
+
+.promo-slider-control {
+  position: absolute;
+  bottom: 96px;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.button-control {
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 0;
+}
+
+
+
 
 /* Advertising */
+
+
+
+
+
 
 
 .advertising-container {
@@ -247,6 +288,7 @@ img {
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-dark-dark-grey);
+  width: 260px;
 }
 
 .advertising-title {
@@ -348,26 +390,43 @@ img {
 
 /* Facilities */
 
-.analytics {
-  display: flex;
-  width: 0 auto;
-  padding: 0;
-  padding-top: 121px;
+.advertising {
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 
-.facilities h2 {
+.description-column-left {
+  width: 100%;
+}
+
+
+
+.analytics {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+  margin-bottom: 80px;
+  border-top: 2px solid var(--basic-light-grey);
+}
+
+
+.facilities-title {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  color: var(--basic-black);
   width: 651px;
 }
 
 
-.facilities p {
+.facilities-description {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  color: var(--basic-dark-dark-grey);
+  width: 646px;
 }
 
 
@@ -384,11 +443,32 @@ img {
 }
 
 
+.facilities-list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-right: 10px;
+  width: 25px;
+  height: 2px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: var(--basic-rose);
+}
+
+
+
 .facilities-item {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  padding-left: 40px;
+  position: relative;
 }
+
+
+
+
 
 
 /* Features */
@@ -428,18 +508,21 @@ img {
 /* Partner-logos */
 
 
+.partners {
+  width: 1200px;
+  border-top: 2px solid var(--basic-light-grey);
+  border-bottom: 2px solid var(--basic-light-grey);
+  padding: 45px 0;
+}
+
+
 
 
 .partners-logos-list {
   display: flex;
-  width: 1200px;
   justify-content: space-between;
   list-style: none;
-  padding-top: 46px;
-  padding-bottom: 44px;
   margin-right: 90px;
-  border-top: 2px solid var(--basic-light-grey);
-  border-bottom: 2px solid var(--basic-light-grey);
 }
 
 
@@ -485,14 +568,14 @@ img {
   content: "";
   width: 25px;
   height: 25px;
-  top: -5px;
-  left: 0;
+  top: -4px;
+  left: -23px;
   position: absolute;
   background-image: url(../img/radio-off.png);
   opacity: 0.4;
 }
 
-.input[type=radio]:checked + label::before {
+.input[type=radio]:checked+label::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -502,7 +585,7 @@ img {
   background-image: url(../img/radio-on.png);
 }
 
-.input[type=checkbox]:checked + label::before {
+.input[type=checkbox]:checked+label::before {
   content: "";
   width: 23px;
   height: 23px;
@@ -516,8 +599,8 @@ img {
   content: "";
   width: 23px;
   height: 23px;
-  top: 0;
-  left: 0;
+  top: -3px;
+  left: -22px;
   position: absolute;
   background-image: url(../img/checkbox-off.png);
   opacity: 0.4;
@@ -553,20 +636,32 @@ img {
 }
 
 
-.filter legend {
+
+
+
+
+
+
+
+
+.filter-price legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   color: var(--basic-black);
+  text-transform: uppercase;
 }
 
-.filter-range {
+
+
+.filter-range-controls {
   position: relative;
   width: 260px;
   height: 80px;
-  margin-bottom: 14px;
+  margin-top: 49px;
+  margin-bottom: 15px;
   padding: 39px 20px;
-  border-radius: 3px;
+  border-radius: 5px;
   background: var(--basic-light-grey);
 }
 
@@ -653,6 +748,13 @@ img {
 }
 
 
+.filter-price {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
 
 .filter-price-controls {
   font-size: 0;
@@ -701,7 +803,7 @@ input {
 /* Sort */
 
 .sort {
-  padding-left: 940px;
+  padding-left: 266px;
 }
 
 
@@ -730,8 +832,6 @@ input {
   display: block;
   margin: 0;
   padding: 0;
-  padding-left: 540px;
-  padding-top: 55px;
 }
 
 .catalog-head a {
@@ -793,13 +893,6 @@ input {
 }
 
 
-.catalog-moulds-wrapper {
-  position: absolute;
-  width: 1200px;
-  padding: 0 20px;
-  transform: translateY(-50%);
-  bottom: 349px;
-}
 
 
 .catalog-moulds {
@@ -851,9 +944,13 @@ input {
 }
 
 
+
+
+
 .page-main-wrapper {
-  width: 260px;
+  display: flex;
 }
+
 
 .page-main-wrapper fieldset {
   padding: 0;
@@ -944,7 +1041,6 @@ input {
   width: 319px;
   min-height: 308px;
   padding: 50px;
-  margin-top: 54px;
   margin-left: 140px;
 }
 
@@ -971,14 +1067,16 @@ input {
   line-height: 18px;
   font-weight: 400;
   color: var(--special-dark-grey);
+  width: 202px;
 }
 
-.contacts-card .phone-link {
+.contacts-card p {
   font-size: 16px;
   line-height: 18px;
   font-weight: 400;
   color: var(--special-dark-grey);
-  margin-top: 5px;
+  padding-top: 5px;
+
 }
 
 .button-contacts {
@@ -1043,36 +1141,25 @@ input {
   width: 81px;
   height: 81px;
   border-radius: 50%;
-  background: linear-gradiend(0deg, #e1e1e1, #e1e1e1), var(--basic-white);
+  background: linear-gradient(0deg, #e1e1e1, #e1e1e1);
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 
-.footer-social-item:hover {
+.footer-social-item:hover .social-button {
   background: linear-gradient(0deg, var(--special-dark-rose), var(--special-dark-rose)), var(--basic-white);
 }
 
 
-.footer-social-item:active {
+.footer-social-item:active .social-button {
   background: linear-gradient(0deg, var(--special-dark-dark-rose), var(--special-dark-dark-rose)), var(--basic-white);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
-
-
-
-
-
-.social-button-vk {}
-
-
-.social-button-fb {}
-
-
-.social-button-ig {}
-
-
 
 
 
